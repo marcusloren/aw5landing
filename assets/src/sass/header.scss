@@ -1,0 +1,83 @@
+.navbar-brand {
+    margin-top: 26px;
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: none;
+}
+.navbar-inverse {
+    background: none;
+    border: none;
+}
+.navbar-inverse .navbar-nav > li > a {
+    @include font(normal, 100, 'Dosis', #a0a0a0, 13px);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.navbar-inverse .navbar-nav > li > a.bt-fale-conosco {
+    @include bt(10px, #f15b27, 'Dosis', 13px, #fff, 600);
+    max-width: 127px;
+    line-height: 5px;
+    margin-top: 8px;
+    height: 33px;
+    &:hover {
+        color: #fff;
+        background-color: #bc380a;
+    }
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #f15b27;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+    color: #f15b27;
+    background: none;
+}
+.navbar-right {
+    float: right !important;
+    margin-right: 47px;
+    margin-top: 65px;
+}
+#slide1 {
+    background: url(../images/banner-principal.jpg) no-repeat center center;
+    height: 766px;
+}
+.carousel-caption {
+    width: 100%;
+    text-align: center;
+    left: 0;
+    right: auto;
+    bottom: 15%;
+    text-shadow: none;
+    h1 {
+        @include font(normal, 300, 'Dosis', #fff, 65px);
+        span {
+            @include font(normal, 700, 'Dosis', #f15b27, 65px);
+        }
+    }
+    p {
+        @include font(light, 100, 'Dosis', #fff, 18px);
+        span {
+            @include font(normal, 600, 'Dosis', #fff, 18px);
+        }
+    }
+    .agende-consultoria {
+        @include bt(10px, #11a211, 'Dosis', 15px, #fff, 600);
+        display: block;
+        max-width: 276px;
+        margin: 0 auto;
+        height: 50px;
+        line-height: 50px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 8%;
+        &:hover {
+            text-decoration: none;
+            background-color: #087a08;
+        }
+    }
+}

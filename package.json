@@ -1,0 +1,31 @@
+{
+  "name": "aw5landing",
+  "version": "1.0.0",
+  "description": "landing aw5 digital",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcusloren/aw5landing.git"
+  },
+  "author": "marcusloren",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcusloren/aw5landing/issues"
+  },
+  "homepage": "https://github.com/marcusloren/aw5landing#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-html-prettify": "0.0.1",
+    "gulp-imagemin": "^3.0.2",
+    "gulp-jshint": "^2.0.1",
+    "gulp-live-server": "0.0.30",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0"
+  }
+}

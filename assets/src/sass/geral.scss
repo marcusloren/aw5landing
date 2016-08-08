@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800,300,200);
+@mixin font ($ft_style, $weight, $font, $color, $ft_size) {
+    font-style: $ft_style;
+    font-weight: $weight;
+    font-family: $font;
+    color: $color;
+    font-family: $font;
+    font-size: $ft_size;
+}
+@mixin bt($bd_radius, $bg_color, $ft, $font_size, $color, $weight) {
+    border-radius: $bd_radius;
+    background-color: $bg_color;
+    font-family: $ft;
+    font-size: $font_size;
+    color: $color;
+    font-weight: $weight;
+}

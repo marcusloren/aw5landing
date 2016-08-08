@@ -1,0 +1,31 @@
+#subheader {
+    background-color: #e35122;
+    min-height: 242px;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    h2 {
+        @include font(light, 400, 'Dosis', #fff, 40px);
+        span {
+            font-weight: 600;
+        }
+    }
+    p {
+        @include font(light, 400, 'Dosis', #fff, 22px);
+        span {
+            font-weight: 500;
+        }
+    }
+    .aspa {
+        background: url(../images/aspa.png);
+        width: 91px;
+        height: 87px;
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+    }
+}
