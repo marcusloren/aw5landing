@@ -1,10 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800,300,200);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
+ @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
 @mixin font ($ft_style, $weight, $font, $color, $ft_size) {
     font-style: $ft_style;
     font-weight: $weight;
     font-family: $font;
     color: $color;
-    font-family: $font;
     font-size: $ft_size;
 }
 @mixin bt($bd_radius, $bg_color, $ft, $font_size, $color, $weight) {
@@ -14,4 +16,48 @@
     font-size: $font_size;
     color: $color;
     font-weight: $weight;
+}
+
+.flex {
+            display: -webkit-box;
+            /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+            display: -moz-box;
+            /* OLD: Firefox (buggy) */
+            display: -ms-flexbox;
+            /* MID: IE 10 */
+            display: -webkit-flex;
+            /* NEW, Chrome 21+ */
+            display: flex;
+            /* NEW: Opera 12.1, Firefox 22+ */
+            -webkit-box-align: center;
+            -moz-box-align: center;
+            /* OLD… */
+            -ms-flex-align: center;
+            /* You know the drill now… */
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+
+::-webkit-input-placeholder {
+     @include font(normal, 300, 'Dosis', #878787, 18px);
+  
+}
+
+:-moz-placeholder {
+  @include font(normal, 300, 'Dosis', #878787, 18px);
+    opacity:100;
+}
+
+::-moz-placeholder {
+     @include font(normal, 300, 'Dosis', #878787, 18px);
+    opacity:100;
+   
+}
+
+:-ms-input-placeholder {  
+    
+     @include font(normal, 300, 'Dosis', #878787, 18px);
+   
+  
 }

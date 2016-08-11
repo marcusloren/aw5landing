@@ -1,5 +1,5 @@
 #subheader {
-    background-color: #e35122;
+    background: url(../images/bg_orange.jpg) #e35122 top center;
     min-height: 242px;
     text-align: center;
     display: -webkit-flex;
@@ -21,11 +21,420 @@
         }
     }
     .aspa {
-        background: url(../images/aspa.png);
-        width: 91px;
-        height: 87px;
+        background: url(../images/aspa.png) no-repeat;
+        width: 71px;
+        height: 68px;
         display: block;
-        margin: 0 auto;
+        left: 50%;
+        bottom: -90%;
         position: absolute;
+    }
+    .container {
+        position: relative;
+        padding: 0;
+    }
+}
+#nos-paramos-pra-pensar {
+    margin-top: 10%;
+    h2 {
+        text-align: center;
+        margin-bottom: 7%;
+        @include font(light, 300, 'Dosis', #000, 58px);
+    }
+    p {
+        @include font(normal, 300, 'Dosis', #322f2f, 18px);
+        line-height: 29px;
+    }
+    .blc-esq {
+        border-right: solid 1px #c5c6c6;
+    }
+    h3 {
+        @include font(normal, 700, 'Dosis', #000, 25px);
+        text-align: center;
+        margin-top: 0;
+    }
+    .blc-dir {
+        figure {
+            padding: 2% 6% 0 6%;
+            @include font(normal, 100, 'Dosis', #000, 17px);
+            img {
+                margin-bottom: 15px;
+            }
+            float:left;
+            text-align:center;
+        }
+    }
+}
+#o-que-fazemos {
+    margin-top: 20%;
+    .o-que-fazemos {
+        border-right: solid 1px #c5c6c6;
+    }
+    h2 {
+        @include font(normal, 400, 'Dosis', #000, 58px);
+        strong {
+            font-weight: 600;
+        }
+    }
+    h3 {
+        @include font(normal, 600, 'Dosis', #000, 23px);
+    }
+    p {
+        @include font(italic, 100, 'Dosis', #000, 18px);
+    }
+}
+#servicos {
+    img {
+        position: absolute;
+        left: 35%;
+        top: -39px;
+    }
+    margin-top:90px;
+    .servico {
+        text-align: center;
+        min-height: 284px;
+        border: solid 1px #d8d8d8;
+        border-radius: 5px;
+        margin-bottom: 59px;
+        overflow: hidden;
+        h2 {
+            margin-top: 69px;
+            @include font(normal, 700, 'Dosis', #000, 15px);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            min-height: 33px;
+        }
+        p {
+            margin-top: 21px;
+            @include font(normal, 400, 'Dosis', #808080, 14px);
+            padding: 0 10px 0 10px;
+        }
+        &:before {
+            content: "";
+            width: 100%;
+            height: 3px;
+            background-color: #e76100;
+            display: block;
+            border-radius: 1.5px;
+            overflow: hidden;
+        }
+    }
+    .col-md-3 {
+        padding-right: 4px;
+        padding-left: 4px;
+    }
+    a {
+        text-transform: uppercase;
+        @include font(normal, 400, 'Dosis', #e76100, 13px);
+        letter-spacing: 1px;
+        padding-top: 5px;
+        display: block;
+        &:after {
+            content: "+";
+            @include font(normal, 500, 'Dosis', #000, 18px);
+            padding-left: 5px;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+#que-tal-uma-amostra-gratis {
+    @extend #subheader;
+    padding-top: 10px;
+    min-height: 338px;
+    h2 {
+        @include font(normal, 300, 'Dosis', #fff, 58px) span {
+            font-weight: 500;
+        }
+    }
+    p {
+        @include font(normal, 100, 'Dosis', #fff, 22px)
+    }
+    display:block;
+    input {
+        margin-bottom: 5px;
+        border: 0;
+        box-shadow: none;
+    }
+    textarea {
+        border: 0;
+        padding-bottom: 10px;
+    }
+    .submit {
+        @include bt(10px, transparent, 'Dosis', 12px, #fff, 700);
+        border: solid 1px #fff;
+        width: 152px;
+        height: 43px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 19%;
+    }
+    .form-horizontal {
+        margin-top: 40px;
+    }
+}
+#portfolio {
+    position: relative;
+    background-color: #000;
+    text-align: center;
+    #container-portifolio {
+        position: absolute;
+        top: %;
+        z-index: 1;
+        ul {
+            margin-top: 2.5%;
+            li {
+                list-style: none;
+                display: inline-block;
+                a {
+                    @include font(normal, 400, 'Dosis', #fff, 13px);
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    margin-right: 12%;
+                    padding: 9px;
+                    border-radius: 5px;
+                    display: block;
+                    &:hover {
+                        padding: 8px;
+                        color: #f7a30a;
+                        text-decoration: none;
+                        border: solid 1px #f7a30a;
+                    }
+                }
+            }
+        }
+        .active {
+            a {
+                padding: 8px!important;
+                color: #f7a30a!important;
+                text-decoration: none!important;
+                border: solid 1px #f7a30a!important;
+            }
+        }
+    }
+    .tab-content,
+    .tabe-pane {
+        height: 100%;
+    }
+    h2 {
+        @include font(normal, 300, 'Dosis', #fff, 56px);
+    }
+    .carousel-caption {
+        padding-right: 5%;
+        padding-left: 5%;
+        width: 100%;
+        right: 0;
+        left: 0;
+        padding-bottom: 0px;
+        bottom: 0;
+        height: 24.8%;
+        padding-top: 0;
+        .container {
+            .row {
+                width: 100%;
+            }
+            height:100%;
+            min-height: 100%;
+            /* habilita o flex nos filhos diretos */
+            display: -ms-flex;
+            display: -webkit-flex;
+            display: flex;
+            /* centraliza na vertical */
+            -ms-align-items: center;
+            -webkit-align-items: center;
+            align-items: center;
+            width:100%;
+        }
+        h3 {
+            @include font(normal, 600, 'Dosis', #fff, 49px);
+            text-align: left;
+            margin-top: 0;
+            span {
+                font-size: 23px;
+            }
+        }
+        h4 {
+            width: 100%;
+            @include font(normal, 300, 'Dosis', #fff, 34px);
+        }
+        p {
+            @include font(normal, 300, 'Dosis', #fff, 20px);
+            line-height: 22px;
+        }
+        .tit-slider {
+            float: left;
+            width: 35%;
+        }
+        .desc-slider {
+            float: right;
+            text-align: left;
+        }
+    }
+    .glyphicon-chevron-left {
+        text-indent: -9000px;
+        background: url(../images/seta-slider-prev.png) #e1900a no-repeat;
+        border-radius: 8px;
+        width: 38px;
+        height: 38px;
+    }
+    .glyphicon-chevron-right {
+        text-indent: -9000px;
+        background: url(../images/seta-slider-next.png) #e1900a no-repeat;
+        border-radius: 8px;
+        width: 38px;
+        height: 38px;
+    }
+}
+#quem-confia-na-gente {
+    h2 {
+        @include font(normal, 300, 'Dosis', #fff, 58px);
+    }
+    text-align:center;
+    background:url(../images/bg-clientes.jpg) #e35122 no-repeat top center;
+    min-height: 315px;
+    .bx-wrapper {
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: none;
+        background: none;
+        margin-top: 5%;
+    }
+    .bx-wrapper .bx-controls-direction a {
+        position: absolute;
+        top: 200%;
+        margin-top: -16px;
+        outline: 0;
+        width: 6px;
+        height: 11px;
+        text-indent: -9999px;
+        z-index: 9999;
+    }
+    .bx-wrapper .bx-next {
+        right: 48%;
+        background: url(../images/controls.png) no-repeat left;
+        width: 6px;
+    }
+    .bx-wrapper .bx-prev {
+        left: 48%;
+        background: url(../images/controls.png) no-repeat right;
+    }
+    .container {
+        padding: 0;
+    }
+    .slider-clientes {
+        li {
+            display: inline;
+        }
+    }
+}
+#depoimentos {
+    min-height: 419px;
+    background: url(../images/bg-depoimentos.jpg) no-repeat;
+    h2 {
+        text-align: center;
+        margin-top: 30px;
+    }
+    ul {
+        margin-top: 10%;
+        li {
+            list-style: none;
+            width: 100%;
+            display: table;
+            min-height: 100%;
+            height: 100%;
+        }
+    }
+    h3 {
+        @include font(normal, 600, 'Dosis', #000, 24px);
+        overflow: hidden;
+        display: block;
+        width: 100%;
+        &:after {
+            content: url(../images/stars.png);
+            padding-left: 10px;
+        }
+    }
+    p {
+        @include font(italic, 300, 'Dosis', #000, 25px);
+        margin-bottom: 120px;
+    }
+    .bx-wrapper {
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: none;
+        background: none;
+        margin-top: -50px;
+        overflow: hidden
+    }
+    .bx-viewport {
+        overflow: visible!important;
+    }
+    .bx-wrapper .bx-controls-direction a {
+        position: absolute;
+        top: 100%;
+        margin-top: -16px;
+        outline: 0;
+        width: 6px;
+        height: 11px;
+        text-indent: -9999px;
+        z-index: 9999;
+    }
+    .bx-wrapper .bx-next {
+        right: 48%;
+        background: url(../images/controls_grey.png) no-repeat left;
+        width: 6px;
+    }
+    .bx-wrapper .bx-prev {
+        left: 48%;
+        width: 6px;
+        background: url(../images/controls_grey.png) no-repeat right;
+    }
+}
+#temos-muito-a-dizer {
+    background-color: #f0f0f0;
+    padding-bottom: 5%;
+    h2 {
+        text-align: center;
+        @include font(normal, 300, 'Dosis', #000, 58px);
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .post {
+        .data {
+            @include font(normal, 100, 'Dosis', #7c7c7c, 13px);
+            text-transform: none;
+        }
+        img {
+            margin-bottom: 20px;
+        }
+        text-transform:uppercase;
+        letter-spacing:1px;
+        a {
+            @include font(normal, 100, 'Dosis', #7c7c7c, 14px);
+        }
+        p {
+            @include font(normal, 100, 'Dosis', #000, 18px);
+            text-transform: none;
+        }
+        h3 {
+            @include font(normal, 600, 'Dosis', #000, 17px);
+            text-transform: none;
+        }
+    }
+}
+span.tags {
+    float: left;
+}
+span.saiba-mais {
+    float: right;
+    a {
+        color: #f15b27!important;
+        &:after {
+            content: url(../images/+_icon.png);
+            padding-left: 10px;
+        }
     }
 }

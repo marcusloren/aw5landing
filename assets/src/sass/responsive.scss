@@ -1,0 +1,127 @@
+@media (max-width: 360px) {
+    .carousel-caption {
+        bottom: 25%;
+        h1 {
+            font-size: 49px;
+            span {
+                font-size: 49px;
+            }
+        }
+        p {
+            font-size: 14px;
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (max-width: 480px) {}
+@media (max-width: 767px) {
+    .navbar-inverse .navbar-nav > li > a.bt-fale-conosco {
+        margin-left: 15px;
+        padding-top: 14px;
+    }
+    .navbar-collapse {
+        border: none!important;
+        -webkit-box-shadow: none!important;
+        box-shadow: none!important;
+    }
+    .navbar-brand {
+        img {
+            margin-left: 20px;
+        }
+    }
+    .navbar {
+        width: 96%;
+    }
+    .navbar-right {
+        float: none!important;
+        margin-left: 10px;
+        background: #000;
+        padding-bottom: 20px;
+    }
+    .aspa {
+        display: none!important;
+    }
+    #nos-paramos-pra-pensar {
+        .blc-dir {
+            figure {
+                margin: 0 auto;
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+    #servicos {
+        .col-md-3 {
+            padding-right: 15px!important;
+            padding-left: 15px!important;
+        }
+    }
+    .submit {
+        margin-bottom: 20px;
+    }
+    #depoimentos .bx-wrapper .bx-next {
+        right: 38%;
+    }
+    .depoimentos-slider {
+        h3 {
+            margin-top: 50px; padding-bottom: 30px;
+        }
+        p {
+            margin-top: 40px;
+        }
+    }
+#portfolio {
+    .carousel-control {
+        z-index: 500;
+        background-image: none;
+        top: -15%;
+        text-shadow: none;
+    }
+    #container-portifolio {
+        position: static;
+        ul {
+            margin: 0 auto;
+            display: table;
+            li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .carousel-caption {
+        height: 100%!important;
+        background-color: rgba(0, 0, 0, 0.7);
+        overflow: scroll;
+        .tit-slider {
+            display: none;
+        }
+        .desc-slider {
+            width: 100%;
+            float: none;
+        }
+        h3 {
+            font-size: 15px;
+            span {
+                font-size: 14px;
+            }
+        }
+        h4 {
+            font-size: 14px;
+            span {
+                margin-bottom: 5px;
+                color: #f7a30a;
+            }
+        }
+        p {
+            line-height: 18px;
+            font-size: 12px;
+        }
+        br {
+            display: none;
+        }
+    }
+}
+    
+}
